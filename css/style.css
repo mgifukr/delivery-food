@@ -53,7 +53,7 @@ body {
 .header__input {
   width: 690px;
   height: 40px;
-  background-image: url(../../img/Vector.svg);
+  background-image: url(/img/Vector.svg);
 }
 
 .buttons {
@@ -91,7 +91,7 @@ body {
 }
 
 .promo {
-  background: #fff1b8 url(../../img/promo-pizza.png);
+  background: #fff1b8 url(/img/promo-pizza.png);
   background-repeat: no-repeat;
   background-position: top -40px right -164px;
   background-size: 800px;
@@ -137,7 +137,7 @@ body {
 
 .restaurants__input {
   width: 306px;
-  background-image: url(../../img/search-icon.svg);
+  background-image: url(/img/search-icon.svg);
 }
 
 .restaurants__cards {

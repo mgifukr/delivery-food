@@ -126,7 +126,6 @@ body {
 
 .restaurants__header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-bottom: 44px;
 }
@@ -137,11 +136,13 @@ body {
   font-size: 36px;
   line-height: 42px;
   margin: 0;
+  margin-right: 30px;
 }
 
 .restaurants__input {
   width: 306px;
   background-image: url(../img/search-icon.svg);
+  margin-left: auto;
 }
 
 .restaurants__cards {
@@ -158,11 +159,11 @@ body {
   overflow: hidden;
   margin-bottom: 30px;
   flex-basis: 30%;
+  text-decoration: none;
 }
 
 .card__image {
-  width: 384px;
-  height: 250px;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -183,6 +184,10 @@ body {
   font-weight: bold;
   font-size: 24px;
   line-height: 32px;
+}
+
+.card__title-reg {
+  font-weight: 400;
 }
 
 .card__tag {
@@ -228,6 +233,42 @@ body {
   overflow: hidden;
   white-space: nowrap;
   max-width: 150px;
+}
+
+.ingredients {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #8c8c8c;
+  margin-bottom: 25px;
+}
+
+.card__button {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.cart-button {
+  background: #1890ff;
+  color: #ffffff;
+  border: none;
+  display: flex;
+  align-items: center;
+  min-width: 134px;
+}
+.cart-button .button__icon {
+  margin-left: 6px;
+}
+
+.card-price {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+  color: #000000;
+  margin-left: 60px;
 }
 
 .price {
@@ -318,7 +359,7 @@ body {
     max-width: 560px;
   }
 
-  .rating {
+  .card .rating {
     flex-basis: 100%;
   }
 

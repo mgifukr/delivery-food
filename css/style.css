@@ -425,6 +425,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .modal__footer-price {
@@ -436,6 +437,11 @@ body {
   line-height: 23px;
   color: #fafafa;
   padding: 15px 20px;
+}
+
+.modal__footer-buttons {
+  display: flex;
+  align-items: center;
 }
 
 .modal__footer-order {
@@ -610,5 +616,33 @@ body {
 
   .footer-link:not(:last-child) {
     margin-right: 0;
+  }
+
+  .modal__body {
+    margin-bottom: 0px;
+  }
+
+  .food-row {
+    flex-wrap: wrap;
+  }
+
+  .food-row__name {
+    flex-basis: 100%;
+  }
+
+  .modal__dialog {
+    padding: 25px 16px;
+  }
+
+  .modal__header {
+    margin-bottom: 11px;
+  }
+
+  .modal__header {
+    font-size: 32px;
+  }
+
+  .modal__footer-price {
+    margin-bottom: 10px;
   }
 }

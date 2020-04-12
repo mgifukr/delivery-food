@@ -7,6 +7,7 @@
    <title>PizzaBurger</title>
    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
    <link rel="stylesheet" href="./css/normalize.css">
+   <link rel="stylesheet" href="/css/animate.css">
    <link rel="stylesheet" href="./css/style.css">
    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
 </head>
@@ -18,10 +19,10 @@
             <a href="/index.html" class="logo"><img src="img\logo.svg" alt="logo" class="header__logo"></a>
             <input type="text" class="header__input input" placeholder="Адрес доставки">
             <div class="buttons">
-               <button class="header__enter button"><img src="img\user.svg" alt="User" class="button__icon"><span
-                     class="button__text">Войти</span></button>
-               <button class="header__cart button"><img src="img\Cart.svg" alt="Cart" class="button__icon"><span
-                     class="button__text">Корзина</span></button>
+               <button class="header__enter button primary-btn"><img src="img\user.svg" alt="User"
+                     class="button__icon"><span class="button__text">Войти</span></button>
+               <button class="header__cart button light-btn" id="cart-button"><img src="img\Cart.svg" alt="Cart"
+                     class="button__icon"><span class="button__text">Корзина</span></button>
             </div>
          </div>
       </div>
@@ -38,7 +39,7 @@
                </div>
             </div>
             <div class="restaurants__cards">
-               <div class="card">
+               <div class="card wow fadeInUp">
                   <img src="./img/food1.jpg" alt="image" class="card__image">
                   <div class="card__text">
                      <div class="card__heading">
@@ -48,14 +49,14 @@
                         <div class="ingredients">Рис, угорь, соус унаги, кунжут, водоросли нори.</div>
                      </div>
                      <div class="card__button">
-                        <button class="button cart-button "><span class="button__text">В корзину</span><img
+                        <button class="button cart-button primary-btn "><span class="button__text">В корзину</span><img
                               src="./img/cart_card.svg" alt="Cart" class="button__icon"></button>
                         <div class="card-price">250 ₽</div>
                      </div>
                   </div>
                </div>
                <!-- ! .card -->
-               <div class="card">
+               <div class="card wow fadeInUp" data-wow-delay=" 0.4s">
                   <img src="./img/food2.jpg" alt="image" class="card__image">
                   <div class="card__text">
                      <div class="card__heading">
@@ -65,14 +66,14 @@
                         <div class="ingredients">Рис, угорь, соус унаги, кунжут, водоросли нори.</div>
                      </div>
                      <div class="card__button">
-                        <button class="button cart-button "><span class="button__text">В корзину</span><img
+                        <button class="button cart-button primary-btn "><span class="button__text">В корзину</span><img
                               src="./img/cart_card.svg" alt="Cart" class="button__icon"></button>
                         <div class="card-price">250 ₽</div>
                      </div>
                   </div>
                </div>
                <!-- ! .card -->
-               <div class="card">
+               <div class="card wow fadeInUp" data-wow-delay=" 0.8s">
                   <img src="./img/food3.jpg" alt="image" class="card__image">
                   <div class="card__text">
                      <div class="card__heading">
@@ -82,14 +83,14 @@
                         <div class="ingredients">Рис, угорь, соус унаги, кунжут, водоросли нори.</div>
                      </div>
                      <div class="card__button">
-                        <button class="button cart-button "><span class="button__text">В корзину</span><img
+                        <button class="button cart-button primary-btn "><span class="button__text">В корзину</span><img
                               src="./img/cart_card.svg" alt="Cart" class="button__icon"></button>
                         <div class="card-price">250 ₽</div>
                      </div>
                   </div>
                </div>
                <!-- ! .card -->
-               <div class="card">
+               <div class="card wow fadeInUp" data-wow-delay=" 1.2s">
                   <img src="./img/food4.jpg" alt="image" class="card__image">
                   <div class="card__text">
                      <div class="card__heading">
@@ -99,14 +100,14 @@
                         <div class="ingredients">Рис, угорь, соус унаги, кунжут, водоросли нори.</div>
                      </div>
                      <div class="card__button">
-                        <button class="button cart-button "><span class="button__text">В корзину</span><img
+                        <button class="button cart-button primary-btn "><span class="button__text">В корзину</span><img
                               src="./img/cart_card.svg" alt="Cart" class="button__icon"></button>
                         <div class="card-price">250 ₽</div>
                      </div>
                   </div>
                </div>
                <!-- ! .card -->
-               <div class="card">
+               <div class="card wow fadeInUp" data-wow-delay=" 1.6s">
                   <img src="./img/food5.jpg" alt="image" class="card__image">
                   <div class="card__text">
                      <div class="card__heading">
@@ -116,14 +117,14 @@
                         <div class="ingredients">Рис, угорь, соус унаги, кунжут, водоросли нори.</div>
                      </div>
                      <div class="card__button">
-                        <button class="button cart-button "><span class="button__text">В корзину</span><img
+                        <button class="button cart-button primary-btn "><span class="button__text">В корзину</span><img
                               src="./img/cart_card.svg" alt="Cart" class="button__icon"></button>
                         <div class="card-price">250 ₽</div>
                      </div>
                   </div>
                </div>
                <!-- ! .card -->
-               <div class="card">
+               <div class="card wow fadeInUp" data-wow-delay=" 2s">
                   <img src="./img/food6.jpg" alt="image" class="card__image">
                   <div class="card__text">
                      <div class="card__heading">
@@ -133,7 +134,7 @@
                         <div class="ingredients">Рис, угорь, соус унаги, кунжут, водоросли нори.</div>
                      </div>
                      <div class="card__button">
-                        <button class="button cart-button "><span class="button__text">В корзину</span><img
+                        <button class="button cart-button primary-btn "><span class="button__text">В корзину</span><img
                               src="./img/cart_card.svg" alt="Cart" class="button__icon"></button>
                         <div class="card-price">250 ₽</div>
                      </div>
@@ -163,8 +164,81 @@
          </div>
       </div>
    </footer>
+   <div class="modal">
+      <div class="modal__dialog">
+         <div class="modal__header">
+            <h3 class="modal__title">Корзина</h3>
+            <button class="modal__close">&times;</button>
+         </div>
+         <div class="modal__body">
+            <div class="food-row">
+               <span class="food-row__name">Ролл угорь стандарт</span>
+               <strong class="food-row__price">250 ₽</strong>
+               <div class="food-row__counter counter">
+                  <button class="counter__button">-</button>
+                  <span class="counter__number">1</span>
+                  <button class="counter__button">+</button>
+               </div>
+            </div>
+            <!--* food-row-->
+            <div class="food-row">
+               <span class="food-row__name">Ролл угорь стандарт</span>
+               <strong class="food-row__price">250 ₽</strong>
+               <div class="food-row__counter counter">
+                  <button class="counter__button">-</button>
+                  <span class="counter__number">1</span>
+                  <button class="counter__button">+</button>
+               </div>
+            </div>
+            <!--* food-row-->
+            <div class="food-row">
+               <span class="food-row__name">Ролл угорь стандарт</span>
+               <strong class="food-row__price">250 ₽</strong>
+               <div class="food-row__counter counter">
+                  <button class="counter__button">-</button>
+                  <span class="counter__number">1</span>
+                  <button class="counter__button">+</button>
+               </div>
+            </div>
+            <!--* food-row-->
+            <div class="food-row">
+               <span class="food-row__name">Ролл угорь стандарт</span>
+               <strong class="food-row__price">250 ₽</strong>
+               <div class="food-row__counter counter">
+                  <button class="counter__button">-</button>
+                  <span class="counter__number">1</span>
+                  <button class="counter__button">+</button>
+               </div>
+            </div>
+            <!--* food-row-->
+            <div class="food-row">
+               <span class="food-row__name">Ролл угорь стандарт</span>
+               <strong class="food-row__price">250 ₽</strong>
+               <div class="food-row__counter counter">
+                  <button class="counter__button">-</button>
+                  <span class="counter__number">1</span>
+                  <button class="counter__button">+</button>
+               </div>
+            </div>
+            <!--* food-row-->
+         </div>
+         <!--*modal__body-->
+         <div class="modal__footer">
+            <span class="modal__footer-price">1250 ₽</span>
+            <button class="modal__footer-order button primary-btn">Оформить заказ</button>
+            <button class="modal__footer-cancel button light-btn">Отмена</button>
+
+         </div>
 
 
+
+      </div>
+   </div>
+   <script src="/js/wow.min.js"></script>
+   <script>
+      new WOW().init();
+   </script>
+   <script src="/js/main.js"></script>
 </body>
 
 </html>

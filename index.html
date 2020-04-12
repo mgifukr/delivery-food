@@ -18,10 +18,10 @@
             <a href="/index.html" class="logo"><img src="img\logo.svg" alt="logo" class="header__logo"></a>
             <input type="text" class="header__input input" placeholder="Адрес доставки">
             <div class="buttons">
-               <button class="header__enter button"><img src="img\user.svg" alt="User" class="button__icon"><span
-                     class="button__text">Войти</span></button>
-               <button class="header__cart button"><img src="img\Cart.svg" alt="Cart" class="button__icon"><span
-                     class="button__text">Корзина</span></button>
+               <button class="header__enter button primary-btn"><img src="img\user.svg" alt="User"
+                     class="button__icon"><span class="button__text">Войти</span></button>
+               <button class="header__cart button light-btn" id="cart-button"><img src="img\Cart.svg" alt="Cart"
+                     class="button__icon"><span class="button__text">Корзина</span></button>
             </div>
          </div>
       </div>
@@ -154,6 +154,77 @@
          </div>
       </div>
    </footer>
+   <div class="modal">
+      <div class="modal__dialog">
+         <div class="modal__header">
+            <h3 class="modal__title">Корзина</h3>
+            <button class="modal__close">&times;</button>
+         </div>
+         <div class="modal__body">
+            <div class="food-row">
+               <span class="food-row__name">Ролл угорь стандарт</span>
+               <strong class="food-row__price">250 ₽</strong>
+               <div class="food-row__counter counter">
+                  <button class="counter__button">-</button>
+                  <span class="counter__number">1</span>
+                  <button class="counter__button">+</button>
+               </div>
+            </div>
+            <!--* food-row-->
+            <div class="food-row">
+               <span class="food-row__name">Ролл угорь стандарт</span>
+               <strong class="food-row__price">250 ₽</strong>
+               <div class="food-row__counter counter">
+                  <button class="counter__button">-</button>
+                  <span class="counter__number">1</span>
+                  <button class="counter__button">+</button>
+               </div>
+            </div>
+            <!--* food-row-->
+            <div class="food-row">
+               <span class="food-row__name">Ролл угорь стандарт</span>
+               <strong class="food-row__price">250 ₽</strong>
+               <div class="food-row__counter counter">
+                  <button class="counter__button">-</button>
+                  <span class="counter__number">1</span>
+                  <button class="counter__button">+</button>
+               </div>
+            </div>
+            <!--* food-row-->
+            <div class="food-row">
+               <span class="food-row__name">Ролл угорь стандарт</span>
+               <strong class="food-row__price">250 ₽</strong>
+               <div class="food-row__counter counter">
+                  <button class="counter__button">-</button>
+                  <span class="counter__number">1</span>
+                  <button class="counter__button">+</button>
+               </div>
+            </div>
+            <!--* food-row-->
+            <div class="food-row">
+               <span class="food-row__name">Ролл угорь стандарт</span>
+               <strong class="food-row__price">250 ₽</strong>
+               <div class="food-row__counter counter">
+                  <button class="counter__button">-</button>
+                  <span class="counter__number">1</span>
+                  <button class="counter__button">+</button>
+               </div>
+            </div>
+            <!--* food-row-->
+         </div>
+         <!--*modal__body-->
+         <div class="modal__footer">
+            <span class="modal__footer-price">1250 ₽</span>
+            <button class="modal__footer-order button primary-btn">Оформить заказ</button>
+            <button class="modal__footer-cancel button light-btn">Отмена</button>
+
+         </div>
+
+
+
+      </div>
+   </div>
+   <script src="/js/main.js"></script>
 
 
 </body>
